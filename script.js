@@ -1,5 +1,5 @@
-const acciones = ['tocar', 'besar', 'acariciar', 'lamer', 'tu elijes', 'estimular'];
-const partes = ['cuello', 'espalda', 'pechos', 'clitoris', 'pene', 'Tu elijes'];
+const acciones = ['tocar', 'besar', 'acariciar', 'lamer', 'tu elijes', 'estimular', 'apretar'];
+const partes = ['cuello', 'espalda', 'pechos', 'clitoris', 'pene', 'pies', 'abdomen', 'tu elijes', 'gluteos', 'piernas'];
 
 let jugadores = [];
 let turnoIndex = 0;
