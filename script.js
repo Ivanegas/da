@@ -38,5 +38,5 @@ function lanzarDados() {
   document.getElementById('resultado').textContent = `🔥 ${jugadorActual} debe recibir ${accion} el/la ${parte}`;
 
   turnoIndex = (turnoIndex + 1) % jugadores.length;
-  setTimeout(actualizarTurno, 3000); // espera 3 segundos antes del siguiente turno
+  setTimeout(actualizarTurno, 10000); // espera 3 segundos antes del siguiente turno
 }
