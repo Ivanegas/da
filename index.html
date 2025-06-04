@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Juego de Dados Personalizado</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juego por Turnos</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <div class="container">
-        <h1>🎲 Acción + Parte del cuerpo 🎲</h1>
-        <div class="dice-container">
-            <div id="dado1" class="dado">Acción</div>
-            <div id="dado2" class="dado">Parte</div>
-        </div>
-        <button onclick="lanzarDados()">¡Lanzar!</button>
+  <div class="container">
+    <h1>🎲 Juego de Turnos</h1>
+
+    <div class="players">
+      <input type="text" id="jugador1" placeholder="Nombre del Jugador 1" />
+      <input type="text" id="jugador2" placeholder="Nombre del Jugador 2" />
+      <button onclick="iniciarJuego()">Iniciar Juego</button>
     </div>
 
-    <script src="script.js"></script>
-</body>
+    <div id="juego" style="display: none;">
+      <h2 id="turno">Turno de: ...</h2>
 
+      <div class="dice-container">
+        <div id="dado1" class="dado">Acción</div>
+        <div id="dado2" class="dado">Parte</div>
+      </div>
+
+      <button onclick="lanzarDados()">Lanzar Dados</button>
+      <p id="resultado" class="resultado"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
